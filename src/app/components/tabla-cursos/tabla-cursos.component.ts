@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { cursos } from './mock';
+import { Curso } from 'src/app/models/curso-to';
 
 @Component({
   selector: 'app-tabla-cursos',
@@ -8,7 +9,7 @@ import { cursos } from './mock';
 })
 export class TablaCursosComponent implements OnInit{
 
-  public cursos?: any[]
+  public cursos?: Curso[]
 
   ngOnInit(): void{
     this.cursos = cursos
